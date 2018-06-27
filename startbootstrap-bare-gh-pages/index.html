@@ -73,12 +73,13 @@
 
     <!-- Anniversary Card -->
     <div id="anniversary" class="container">
+        <!-- <canvas id="world"></canvas> -->
       <div class="card" style="width: 28rem; margin: auto;">
         <img src="../assets/Jellyfish.jpg" class="card-img-top" alt="Video Placeholder">
         <div class="card-body">
           <h5 class="card-title">Congratulations!</h5>
-          <p class="card-text"><a href="">Read a message</a> from our CEO</p>
-          <a href="#" id="show-message" class="btn btn-primary">Show</a>
+          <p class="card-text"><a href="/" target="" id="read" >Read a message</a> from our CEO</p>
+          <!-- <a href="#" id="show-message" class="btn btn-primary">Show</a> -->
         </div>
         <div id="message" style="padding: 10px;">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nulla ultrices, lobortis sapien vitae, aliquet lorem. Integer felis nibh, tristique vitae suscipit vitae, egestas quis magna. Vestibulum viverra ex id nunc tincidunt dapibus. Sed at dapibus leo.</p>
@@ -98,8 +99,8 @@
         <img src="../assets/Jellyfish.jpg" class="card-img-top" alt="Video Placeholder">
         <div class="card-body">
           <h5 class="card-title">Congratulations!</h5>
-          <p class="card-text"><a href="">Here's a message</a> from our CHRO, Laurie Ledford</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <p class="card-text"><a href="/">Here's a message</a> from our CHRO, Laurie Ledford</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
       <div class="dismiss">
@@ -117,6 +118,7 @@
     <script>
       $(document).ready(
       function(){
+        $("#anniversary").hide();
           $("#card").click(function () {
               $("#anniversary").fadeToggle();
               // $('body').css('filter', 'brightness(50%)');
@@ -125,6 +127,7 @@
 
       $(document).ready(
       function(){
+        $("#anniversary-reward").hide();
           $("#reward").click(function () {
               $("#anniversary-reward").fadeToggle();
           });
@@ -132,7 +135,16 @@
 
       $(document).ready(
       function(){
+        $("#message").hide();
           $("#show-message").click(function () {
+              $("#message").fadeToggle();
+          });
+      });
+
+      $(document).ready(
+      function(){
+        $("#message").hide();
+          $("#read").click(function () {
               $("#message").fadeToggle();
           });
       });
