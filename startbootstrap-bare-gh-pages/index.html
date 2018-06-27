@@ -78,9 +78,9 @@
         <div class="card-body">
           <h5 class="card-title">Congratulations!</h5>
           <p class="card-text"><a href="">Read a message</a> from our CEO</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" id="show-message" class="btn btn-primary">Show</a>
         </div>
-        <div class="message" style="padding: 10px;">
+        <div id="message" style="padding: 10px;">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nulla ultrices, lobortis sapien vitae, aliquet lorem. Integer felis nibh, tristique vitae suscipit vitae, egestas quis magna. Vestibulum viverra ex id nunc tincidunt dapibus. Sed at dapibus leo.</p>
         </div>
       </div>
@@ -127,6 +127,13 @@
       function(){
           $("#reward").click(function () {
               $("#anniversary-reward").fadeToggle();
+          });
+      });
+
+      $(document).ready(
+      function(){
+          $("#show-message").click(function () {
+              $("#message").fadeToggle();
           });
       });
     </script>
