@@ -6,6 +6,10 @@
     font-size: 10px;
 }
 
+.container {
+    z-index: 1;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -13,5 +17,17 @@ html, body {
     height: 100%;
     overflow: hidden;
     background: #111;
+    z-index:0;
 }
 
+body {
+    z-index: 5;
+}
+
+#world {
+    z-index: -1;
+}
+
+#card, #dismiss {
+    z-index: 5;
+}
