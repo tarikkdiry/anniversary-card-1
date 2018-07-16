@@ -8,6 +8,7 @@
 
 .container {
     z-index: 1;
+    position: relative;
 }
 
 html, body {
@@ -17,12 +18,9 @@ html, body {
     height: 100%;
     overflow: hidden;
     background: #111;
-    z-index:0;
 }
 
-body {
-    z-index: 5;
-}
+
 
 #world {
     z-index: -1;
@@ -31,3 +29,11 @@ body {
 #card, #dismiss {
     z-index: 5;
 }
+
+.text-block {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+}
+
